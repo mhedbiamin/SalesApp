@@ -34,7 +34,7 @@ public class LoginController {
 	@Autowired
 	private RoleRepository roleRepository;;
 
-	@RequestMapping(value={"/", "/login"}, method = RequestMethod.GET)
+	@RequestMapping(value={ "/login"}, method = RequestMethod.GET)
 	public ModelAndView login(){
 		ModelAndView modelAndView = new ModelAndView();
 		modelAndView.setViewName("login");
