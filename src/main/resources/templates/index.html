@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org"
 	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
-	layout:decorator="template1">
-<head>
+	>
+<head th:replace="fragments/header :: header-css"/>
 <meta charset="utf-8" />
 <link rel="stylesheet" type="text/css" th:href="@{/css/myStyle.css}" />
 <title>Home</title>
 </head>
 <body>
-<div layout:fragment="content">
+<div th:replace="fragments/header :: header"></div>
+<!-->  <div layout:fragment="content"></-->
 
 
 <div class="container">
@@ -72,7 +73,7 @@
 			</div>
 
 		</div>
-	</div>
+	
 	<div class="col-md-6">
 		<div class="panel panel-primary" th:if="${compte}">
 			<div class="panel panel-heading">Operations</div>
