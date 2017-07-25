@@ -1,4 +1,4 @@
-package com.example.metier;
+package com.example.config;
 
 import javax.sql.DataSource;
 
